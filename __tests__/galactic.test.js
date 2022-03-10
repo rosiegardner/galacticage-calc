@@ -3,11 +3,16 @@ import Galactic from './../src/js/galactic.js'
 describe('Galactic', () => {
 
   test('should return the class galactic', () => {
-    const galacticAge = new Galactic ();
+    const galactic = new Galactic();
   });
 
   test('should return the constructor of galactic class', () => {
-    const galacticAge = new Galactic ();
-    expect(galacticAge.age).toEqual();
+    const galactic = new Galactic();
+    expect(galactic.galacticAge).toEqual();
   });
+
+  test('should return the age of user input', () => {
+    const galactic = new Galactic(32);
+    expect(galactic.galacticAge).toEqual();
+  })
 });
