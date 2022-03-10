@@ -11,8 +11,8 @@ describe('Galactic', () => {
     expect(galactic.galacticAge).toEqual();
   });
 
-  test('should return the age of user input', () => {
+  test('should return the age of user', () => {
     const galactic = new Galactic(32);
-    expect(galactic.galacticAge).toEqual();
-  })
+    expect(galactic.galacticAge).toEqual(32);
+  });
 });
