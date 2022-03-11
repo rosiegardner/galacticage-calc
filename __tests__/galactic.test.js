@@ -20,7 +20,13 @@ describe('Galactic', () => {
 describe('planetMercury', () => {
 
   test('should create the function planetMercury', () => {
-    const galactic = new Galactic();
+    const galactic = new Galactic(32);
     galactic.planetMercury();
   });
+
+  test('should return the age on planetMercury', () => {
+    const galactic = new Galactic(32);
+    let mercuryAge = galactic.planetMercury();
+    expect(mercuryAge).toEqual(133)
+  })
 });
