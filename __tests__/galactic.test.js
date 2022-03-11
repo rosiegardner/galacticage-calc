@@ -49,4 +49,10 @@ describe('planetMercury', () => {
     ageOnMercury.planetMercury();
     expect(ageOnMercury.mercuryAge).toEqual(.24);
   });
+
+  test('should return the the remaining years of life on mercury', () => {
+    const mercuryRemains = new Galactic(68);
+    mercuryRemains.planetMercury();
+    expect(mercuryRemains.mercuryDeath).toEqual(283)
+  });
 });
