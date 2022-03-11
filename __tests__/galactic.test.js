@@ -4,7 +4,12 @@ describe('Galactic', () => {
 
   test('should return the earth age of 1', () => {
     const earthAge = new Galactic(1);
-    expect(earthAge.earth).toEqual(1);
+    expect(earthAge.earthSolar).toEqual(1);
+  });
+
+  test('should return the earth age in Mercury years of .24', () => {
+    const mercuryAge = new Galactic(.24);
+    expect(mercuryAge.earthSolar).toEqual(.24);
   });
 
 });
