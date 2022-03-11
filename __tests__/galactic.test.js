@@ -17,4 +17,10 @@ describe('LifeExpectancy', () => {
     expect(lifeLimit.earthLife).toEqual(69);
   });
 
+  test('should return the the remaining years of life', () => {
+    const lifeRemains = new Galactic(68);
+    lifeRemains.lifeExpectancy();
+    expect(lifeRemains.earthDeath).toEqual(68)
+  });
+
 });
