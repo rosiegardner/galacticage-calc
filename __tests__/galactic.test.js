@@ -34,4 +34,10 @@ describe('LifeExpectancy', () => {
     expect(lifeSurpass.bonusEarthYears).toEqual(1)
   });
 
+  test('should return the expectancy of life on mercury', () => {
+    const mercuryLimit = new Galactic();
+    mercuryLimit.lifeExpectancy();
+    expect(mercuryLimit.earthLife).toExpect(.24);
+  });
+
 });
