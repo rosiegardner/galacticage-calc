@@ -8,3 +8,12 @@ describe('Galactic', () => {
   });
 
 });
+
+describe('LifeExpectancy', () => {
+  
+  test('should return the expectancy of life on earth', () => {
+    let earthLife = new Galactic(69);
+    expect(earthLife.galactic).toEqual(69);
+  });
+  
+});
