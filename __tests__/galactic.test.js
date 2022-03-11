@@ -15,6 +15,13 @@ describe('Galactic', () => {
     const galactic = new Galactic(32);
     expect(galactic.galacticAge).toEqual(32);
   });
+
+  test('should return the age of user life expectancy', () => {
+    const galactic = new Galactic(32);
+    expect(galactic.galacticAge).toEqual(32);
+    expect(galactic.lifeExpectancy).toEqual(100);
+  });
+
 });
 
 describe('planetMercury', () => {
