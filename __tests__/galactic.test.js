@@ -36,4 +36,12 @@ describe('planetMercury', () => {
     let mercuryAge = galactic.planetMercury();
     expect(mercuryAge).toEqual(133)
   });
+
+  test('should return the age life expectancy left on planetMercury', () => {
+    const galactic = new Galactic(32);
+    let mercuryAge = galactic.planetMercury();
+    let mercuryLife = galactic.planetMercury();
+    expect(mercuryAge).toEqual(133)
+    expect(mercuryLife).toEqual(33)
+  });
 });
