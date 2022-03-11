@@ -3,7 +3,7 @@ import Galactic from './../src/js/galactic.js'
 describe('Galactic', () => {
 
   test('should return the earth age of 1', () => {
-    let earthAge = new Galactic(1);
+    const earthAge = new Galactic(1);
     expect(earthAge.earth).toEqual(1);
   });
 
@@ -12,8 +12,9 @@ describe('Galactic', () => {
 describe('LifeExpectancy', () => {
   
   test('should return the expectancy of life on earth', () => {
-    let earthLife = new Galactic(69);
-    expect(earthLife.galactic).toEqual(69);
+    const lifeLimit = new Galactic();
+    lifeLimit.lifeExpectancy();
+    expect(lifeLimit.earthLife).toEqual(69);
   });
-  
+
 });
