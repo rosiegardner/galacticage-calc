@@ -16,3 +16,11 @@ describe('Galactic', () => {
     expect(galactic.galacticAge).toEqual(32);
   });
 });
+
+describe('planetMercury', () => {
+
+  test('should create the function planetMercury', () => {
+    const galactic = new Galactic();
+    galactic.planetMercury();
+  });
+});
