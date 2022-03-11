@@ -28,5 +28,5 @@ describe('planetMercury', () => {
     const galactic = new Galactic(32);
     let mercuryAge = galactic.planetMercury();
     expect(mercuryAge).toEqual(133)
-  })
+  });
 });
