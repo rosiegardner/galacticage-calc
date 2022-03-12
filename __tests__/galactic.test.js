@@ -12,6 +12,11 @@ describe('Galactic', () => {
     expect(mercuryAge.earthSolar).toEqual(133);
   });
 
+  test('should return the Venus age of 51', () => {
+    const venusAge = new Galactic(51);
+    expect(venusAge.earthSolar).toEqual(51);
+  });
+
 });
 
 describe('LifeExpectancy', () => {
