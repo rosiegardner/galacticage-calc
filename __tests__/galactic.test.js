@@ -9,7 +9,7 @@ describe('Galactic', () => {
 
   test('should return the mercury age of 133', () => {
     const mercuryAge = new Galactic(133);
-    expect(mercury.earthSolar).toEqual(133);
+    expect(mercuryAge.earthSolar).toEqual(133);
   });
 
 });
