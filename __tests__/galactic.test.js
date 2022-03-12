@@ -22,6 +22,11 @@ describe('Galactic', () => {
     expect(marsAge.earthSolar).toEqual(17);
   });
 
+  test('should return the Jupiter age of 3', () => {
+    const jupiterAge = new Galactic(3);
+    expect(jupiterAge.earthSolar).toEqual(3);
+  });
+
 });
 
 describe('LifeExpectancy', () => {
