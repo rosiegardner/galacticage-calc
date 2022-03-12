@@ -2,14 +2,14 @@ import Galactic from './../src/js/galactic.js'
 
 describe('Galactic', () => {
 
-  test('should return the earth age of 1', () => {
-    const earthAge = new Galactic(1);
-    expect(earthAge.earthSolar).toEqual(1);
+  test('should return the earth age of 32', () => {
+    const earthAge = new Galactic(32);
+    expect(earthAge.earthSolar).toEqual(32);
   });
 
-  test('should return the earth age in Mercury years of .24', () => {
-    const mercuryAge = new Galactic(.24);
-    expect(mercuryAge.earthSolar).toEqual(.24);
+  test('should return the mercury age of 133', () => {
+    const mercuryAge = new Galactic(133);
+    expect(mercury.earthSolar).toEqual(133);
   });
 
 });
@@ -34,25 +34,4 @@ describe('LifeExpectancy', () => {
     expect(lifeSurpass.bonusEarthYears).toEqual(1)
   });
 
-  // test('should return the expectancy of life on mercury', () => {
-  //   const mercuryLimit = new Galactic(.24);
-  //   mercuryLimit.lifeExpectancy();
-  //   expect(mercuryLimit.lifeOnMercury).toEqual();
-  // });
-
-});
-
-describe('planetMercury', () => {
-
-  test('this should return the current age on mercury', () => {
-    const ageOnMercury = new Galactic();
-    ageOnMercury.planetMercury();
-    expect(ageOnMercury.mercuryAge).toEqual(.24);
-  });
-
-  test('should return the the remaining years of life on mercury', () => {
-    const mercuryRemains = new Galactic(68);
-    mercuryRemains.planetMercury();
-    expect(mercuryRemains.mercuryDeath).toEqual(283)
-  });
 });
