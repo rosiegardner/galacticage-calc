@@ -27,15 +27,15 @@ describe('Galactic', () => {
     
   });
 
-  // describe('marsAge', () => {
+  describe('marsAge', () => {
 
-  //   test('should return the age of 60.16 on mars', () => {
-  //     const marsAge = new Galactic(32);
-  //     marsAge.marsAge();
-  //     expect(marsAge.marsSolar).toEqual(60.16);
-  //   });
+    test('should return the age of 60.16 on mars', () => {
+      const marsAge = new Galactic(32);
+      marsAge.marsAge();
+      expect(marsAge.marsSolar).toEqual(60.16);
+    });
     
-  // });
+  });
 
   // test('should return the Jupiter age of 3', () => {
   //   const jupiterAge = new Galactic(3);
