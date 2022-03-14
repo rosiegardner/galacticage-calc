@@ -4,15 +4,17 @@ describe('Galactic', () => {
 
   test('should return the earth age of 32', () => {
     const earthAge = new Galactic(32);
-    expect(earthAge.earthSolar).toEqual(32);
+    expect(earthAge.age).toEqual(32);
   });
 
   describe('mercuryAge', () => {
 
-    test('should return the age of .24 for mercury', () => {
+    test('should return the age of 7.68 for mercury', () => {
       const mercuryAge = new Galactic(32);
+      mercuryAge.mercuryAge();
       expect(mercuryAge.mercurySolar).toEqual(7.68);
     });
+    
   });
 
   // test('should return the mercury age of 133', () => {
@@ -37,25 +39,25 @@ describe('Galactic', () => {
 
 });
 
-describe('LifeExpectancy', () => {
+// describe('LifeExpectancy', () => {
   
-  test('should return the expectancy of life on earth', () => {
-    const lifeLimit = new Galactic();
-    lifeLimit.lifeExpectancy();
-    expect(lifeLimit.earthLife).toEqual(69);
-  });
+//   test('should return the expectancy of life on earth', () => {
+//     const lifeLimit = new Galactic();
+//     lifeLimit.lifeExpectancy();
+//     expect(lifeLimit.earthLife).toEqual(69);
+//   });
 
-  test('should return the the remaining years of life', () => {
-    const lifeRemains = new Galactic(68);
-    lifeRemains.lifeExpectancy();
-    expect(lifeRemains.earthDeath).toEqual(1)
-  });
+//   test('should return the the remaining years of life', () => {
+//     const lifeRemains = new Galactic(68);
+//     lifeRemains.lifeExpectancy();
+//     expect(lifeRemains.earthDeath).toEqual(1)
+//   });
 
-  test('should return years surpass life expectancy', () => {
-    const lifeSurpass = new Galactic(70);
-    lifeSurpass.lifeExpectancy();
-    expect(lifeSurpass.bonusEarthYears).toEqual(1)
-  });
+//   test('should return years surpass life expectancy', () => {
+//     const lifeSurpass = new Galactic(70);
+//     lifeSurpass.lifeExpectancy();
+//     expect(lifeSurpass.bonusEarthYears).toEqual(1)
+//   });
 
-});
+// });
 
