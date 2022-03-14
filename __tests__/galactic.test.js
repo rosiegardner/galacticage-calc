@@ -37,10 +37,15 @@ describe('Galactic', () => {
     
   });
 
-  // test('should return the Jupiter age of 3', () => {
-  //   const jupiterAge = new Galactic(3);
-  //   expect(jupiterAge.earthSolar).toEqual(3);
-  // });
+  describe('jupiterAge', () => {
+
+    test('should return the age of 379.52 on jupiter', () => {
+      const jupiterAge = new Galactic(32);
+      jupiterAge.jupiterAge();
+      expect(jupiterAge.jupiterSolar).toEqual(379.52);
+    });
+    
+  });
 
 });
 
