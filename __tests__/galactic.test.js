@@ -9,7 +9,7 @@ describe('Galactic', () => {
 
   describe('mercuryAge', () => {
 
-    test('should return the age of 7.68 for mercury', () => {
+    test('should return the age of 7.68 on mercury', () => {
       const mercuryAge = new Galactic(32);
       mercuryAge.mercuryAge();
       expect(mercuryAge.mercurySolar).toEqual(7.68);
@@ -19,7 +19,7 @@ describe('Galactic', () => {
 
   describe('venusAge', () => {
 
-    test('should return the age of 19.84 for venus', () => {
+    test('should return the age of 19.84 on venus', () => {
       const venusAge = new Galactic(32);
       venusAge.venusAge();
       expect(venusAge.venusSolar).toEqual(19.84);
@@ -27,19 +27,14 @@ describe('Galactic', () => {
     
   });
 
-  // test('should return the mercury age of 133', () => {
-  //   const mercuryAge = new Galactic(133);
-  //   expect(mercuryAge.earthSolar).toEqual(133);
-  // });
+  // describe('marsAge', () => {
 
-  // test('should return the Venus age of 51', () => {
-  //   const venusAge = new Galactic(51);
-  //   expect(venusAge.earthSolar).toEqual(51);
-  // });
-
-  // test('should return the Mars age of 17', () => {
-  //   const marsAge = new Galactic(17);
-  //   expect(marsAge.earthSolar).toEqual(17);
+  //   test('should return the age of 60.16 on mars', () => {
+  //     const marsAge = new Galactic(32);
+  //     marsAge.marsAge();
+  //     expect(marsAge.marsSolar).toEqual(60.16);
+  //   });
+    
   // });
 
   // test('should return the Jupiter age of 3', () => {
