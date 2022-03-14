@@ -61,11 +61,11 @@ describe('Galactic', () => {
       expect(lifeRemains.expectancy).toEqual(37)
     });
   
-    // test('should return years surpass life expectancy', () => {
-    //   const lifeSurpass = new Galactic(70);
-    //   lifeSurpass.lifeExpectancy();
-    //   expect(lifeSurpass.bonusEarthYears).toEqual(1)
-    // });
+    test('should return years surpass life expectancy', () => {
+      const lifeSurpass = new Galactic(70);
+      lifeSurpass.lifeExpectancy();
+      expect(lifeSurpass.ageOver).toEqual(1)
+    });
   
   });
 
