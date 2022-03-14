@@ -14,6 +14,16 @@ describe('Galactic', () => {
       mercuryAge.mercuryAge();
       expect(mercuryAge.mercurySolar).toEqual(7.68);
     });
+
+  });
+
+  describe('venusAge', () => {
+
+    test('should return the age of 19.84 for venus', () => {
+      const venusAge = new Galactic(32);
+      venusAge.venusAge();
+      expect(venusAge.venusSolar).toEqual(19.84);
+    });
     
   });
 
