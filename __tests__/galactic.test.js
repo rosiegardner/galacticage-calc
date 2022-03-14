@@ -55,7 +55,7 @@ describe('Galactic', () => {
       expect(lifeLimit.expectancy).toEqual(69);
     });
   
-    test('should return the the remaining years of life', () => {
+    test('should return the the remaining years of life on earth', () => {
       const lifeRemains = new Galactic(32);
       lifeRemains.lifeExpectancy();
       expect(lifeRemains.expectancy).toEqual(37)
