@@ -26,7 +26,7 @@ describe('Galactic', () => {
       const lifeSurpass = new Galactic(70);
       lifeSurpass.lifeExpectancy();
       lifeSurpass.mercuryAge();
-      expect(lifeSurpass.mercuryAgeOver).toBeCloseTo(1.11, 0);
+      expect(lifeSurpass.mercuryAgeOver).toBeCloseTo(.24);
     });
 
   });
@@ -44,6 +44,13 @@ describe('Galactic', () => {
       lifeRemains.lifeExpectancy();
       lifeRemains.venusAge()
       expect(lifeRemains.venusExpectancy).toBeCloseTo(22.94, 2);
+    });
+
+    test('should return years surpass life expectancy on venus', () => {
+      const lifeSurpass = new Galactic(70);
+      lifeSurpass.lifeExpectancy();
+      lifeSurpass.venusAge();
+      expect(lifeSurpass.venusAgeOver).toBeCloseTo(.62);
     });
     
   });
