@@ -65,6 +65,13 @@ describe('Galactic', () => {
       jupiterAge.jupiterAge();
       expect(jupiterAge.jupiterSolar).toEqual(379.52);
     });
+
+    test('should return years left in jupiter years', () => {
+      const lifeRemains = new Galactic(32);
+      lifeRemains.lifeExpectancy();
+      lifeRemains.jupiterAge()
+      expect(lifeRemains.jupiterExpectancy).toBeCloseTo(438.82, 3);
+    });
     
   });
 
