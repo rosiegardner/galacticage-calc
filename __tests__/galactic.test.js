@@ -69,6 +69,13 @@ describe('Galactic', () => {
       lifeRemains.marsAge()
       expect(lifeRemains.marsExpectancy).toBeCloseTo(69.56, 2);
     });
+
+    test('should return years surpass life expectancy on mars', () => {
+      const lifeSurpass = new Galactic(70);
+      lifeSurpass.lifeExpectancy();
+      lifeSurpass.marsAge();
+      expect(lifeSurpass.marsAgeOver).toBeCloseTo(1.88);
+    });
     
   });
 
