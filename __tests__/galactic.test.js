@@ -14,6 +14,13 @@ describe('Galactic', () => {
       mercuryAge.mercuryAge();
       expect(mercuryAge.mercurySolar).toEqual(7.68);
     });
+    
+    test('should return years left in mercury years', () => {
+      const lifeRemains = new Galactic(32);
+      lifeRemains.lifeExpectancy();
+      lifeRemains.mercuryAge()
+      expect(lifeRemains.mercuryExpectancy).toBeCloseTo(8.79, 0);
+    });
 
   });
 
@@ -70,5 +77,4 @@ describe('Galactic', () => {
   });
 
 });
-
 
