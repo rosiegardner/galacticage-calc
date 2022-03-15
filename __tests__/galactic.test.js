@@ -93,6 +93,14 @@ describe('Galactic', () => {
       lifeRemains.jupiterAge()
       expect(lifeRemains.jupiterExpectancy).toBeCloseTo(438.82, 3);
     });
+
+    test('should return years surpass life expectancy on jupiter', () => {
+      const lifeSurpass = new Galactic(70);
+      lifeSurpass.lifeExpectancy();
+      lifeSurpass.jupiterAge();
+      expect(lifeSurpass.jupiterAgeOver).toBeCloseTo(11.86);
+    });
+    
     
   });
 
