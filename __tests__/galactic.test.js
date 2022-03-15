@@ -48,6 +48,13 @@ describe('Galactic', () => {
       marsAge.marsAge();
       expect(marsAge.marsSolar).toEqual(60.16);
     });
+
+    test('should return years left in mars years', () => {
+      const lifeRemains = new Galactic(32);
+      lifeRemains.lifeExpectancy();
+      lifeRemains.marsAge()
+      expect(lifeRemains.marsExpectancy).toBeCloseTo(69.56, 2);
+    });
     
   });
 
