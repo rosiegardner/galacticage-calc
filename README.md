@@ -1,6 +1,6 @@
-# Template Repo
+# Super Galactic Age Calculator
 
-#### This is a Template for a web environment
+####  An application that determines a user's age based on a planet's solar years.
 
 #### By Rosie Gardner
 
@@ -8,8 +8,8 @@
 
 * JavaScript
 * jQuery
-* HTML
-* CSS
+* Jest
+
 
 ## Setup/Installation Requirements
 
